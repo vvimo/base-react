@@ -1,0 +1,29 @@
+@import '~themes/base.less';
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:global {
+  .clearfix {
+    &:after, &:before {
+      display: table;
+      content: " ";
+    }
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+}
